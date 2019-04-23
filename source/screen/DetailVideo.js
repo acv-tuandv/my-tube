@@ -111,11 +111,12 @@ class DetailVideo extends Component {
 
   render() {
 
-    const url = 'https://www.radiantmediaplayer.com/media/bbb-360p.mp4'
-    // const url = 'https://www.radiantmediaplayer.com/docs/latest/gist/iframe/'
+    // const url = 'https://www.radiantmediaplayer.com/media/bbb-360p.mp4'
+    // const url = 'http://192.99.200.212/disk1/ANIME/OnePunchMan/One.Punch.Man01.mp4'
+    const url = 'http://192.99.200.212/disk1/ANIME/OnePunchMan/One.Punch.Man09.mp4'
     const logo = 'https://your-url.com/logo.png'
     const placeholder = 'https://your-url.com/placeholder.png'
-    const title = 'Nono Project'
+    const title = 'ワンパンマン (Wanpanman)'
     
     return (
       <View style={styles.container}>

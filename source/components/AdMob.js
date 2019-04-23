@@ -7,15 +7,15 @@ import {
 
 class AdMob extends Component {
 
-    componentDidMount() {
-        AdMobInterstitial.setAdUnitID('/6499/example/interstitial')
-        AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId])
-        AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd())
-    }
+    // componentDidMount() {
+    //     AdMobInterstitial.setAdUnitID('/6499/example/interstitial')
+    //     AdMobInterstitial.setTestDevices([AdMobInterstitial.simulatorId])
+    //     AdMobInterstitial.requestAd().then(() => AdMobInterstitial.showAd())
+    // }
 
-    componentWillUnmount(){
-        AdMobInterstitial.removeAllListeners();
-    }
+    // componentWillUnmount(){
+    //     AdMobInterstitial.removeAllListeners();
+    // }
     render() {
         return(
             <View>

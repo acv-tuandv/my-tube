@@ -193,19 +193,6 @@ class HomeScreen extends Component{
     console.log('State: ', this.state);
   }
 
-  static navigationOptions = ({ navigation }) => {
-    const { params = {} } = navigation.state;
-    return {
-      headerRight: <TouchableOpacity 
-        onPress={() => params.handleThis()}
-        style={{marginRight: 10}}><Image 
-        source={require("../../photos/search_btn.png")}
-        style={{ width: 35, height: 35 }}/>
-      </TouchableOpacity>,
-
-    };
-  };
-
   componentDidMount() {
     this.props.navigation.setParams({
       handleThis: this.changeButtonColorHandler
@@ -463,11 +450,11 @@ const AppNavigator = createStackNavigator(
       headerTitleStyle: {
         fontWeight: 'bold',
       },
-      // headerRight: <TouchableOpacity 
-      //     style={{marginRight: 10}}><Image 
-      //     source={require("../../photos/search_btn.png")}
-      //     style={{ width: 35, height: 35 }}/>
-      //   </TouchableOpacity>,
+      headerRight: <TouchableOpacity 
+          style={{marginRight: 10}}><Image 
+          source={require("../../photos/search_btn.png")}
+          style={{ width: 35, height: 35 }}/>
+        </TouchableOpacity>,
       // headerLeft: <TouchableOpacity style={{marginLeft: 10}}><Image 
       //     source={require("../../photos/hamburger_menu.png")}
       //     style={{ width: 38, height: 38 }}/>

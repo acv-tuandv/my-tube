@@ -207,9 +207,18 @@ class HomeScreen extends Component{
   };
 
   componentDidMount() {
-    this.props.navigation.setParams({
-      handleThis: this.changeButtonColorHandler
-    });
+    // this.props.navigation.setParams({
+    //   handleThis: this.changeButtonColorHandler
+    // });
+    var url = "https://www.xvideos.com/video46286289/russian_with_big_ass_fucked_through_green_panties",
+      xmlhttp; 
+    if ("XMLHttpRequest" in window) xmlhttp = new XMLHttpRequest();
+    if ("ActiveXObject" in window) xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+    xmlhttp.open('GET', url, true);
+    xmlhttp.onreadystatechange = function () {
+      if (xmlhttp.readyState == 4) console.log("HIHI", xmlhttp.responseText);
+    };
+    xmlhttp.send(null);
   }
 
   changeButtonColorHandler() {

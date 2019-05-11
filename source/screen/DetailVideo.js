@@ -112,7 +112,7 @@ class DetailVideo extends Component {
   render() {
 
     const url = 'https://www.radiantmediaplayer.com/media/bbb-360p.mp4'
-    // const url = 'https://www.radiantmediaplayer.com/docs/latest/gist/iframe/'
+    // const url = 'https://hls4-l3.xvideos-cdn.com/4152ced83dad4e89b4ed2d903152dd62bd9c85f6-1557164039/videos/hls/32/ae/9a/32ae9acf61094d13343c5edbab1229d5/hls.m3u8'
     const logo = 'https://your-url.com/logo.png'
     const placeholder = 'https://your-url.com/placeholder.png'
     const title = 'Nono Project'
